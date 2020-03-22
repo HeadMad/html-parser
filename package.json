@@ -1,0 +1,23 @@
+{
+  "name": "html-parser",
+  "version": "1.0.0",
+  "description": "siple html parser for text",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HeadMad/html-parser.git"
+  },
+  "keywords": [
+    "html",
+    "parser"
+  ],
+  "author": "HeadMad",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HeadMad/html-parser/issues"
+  },
+  "homepage": "https://github.com/HeadMad/html-parser#readme"
+}
