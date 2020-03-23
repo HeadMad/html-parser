@@ -14,3 +14,26 @@ Parser is a function, that has one argument - input text,
 - **parent**
   <br>`Object`. Parent node
   <br>For nodes of top level, parent node will be `#root`
+
+
+```javascript
+// Exemple.js
+const parser = require('html-parser')
+
+const input = `
+<footer class="page__footer">
+  <img src="./images/phone.png" alt="phone">
+  <my-contacts phone="xxx-xxx-xxx"/>
+</footer>
+`
+const parsedInput = parser(input)
+console.log(parsedInput)
+/*
+  [
+    {name: "#root", content: Array(3)},
+    {name: "footer", attrs: {…}, content: Array(5), parent: {…}},
+    {name: "img", attrs: {…}, parent: {…}},
+    {name: "my-contacts", attrs: {…}, parent: {…}}
+  ]
+*/
+```
